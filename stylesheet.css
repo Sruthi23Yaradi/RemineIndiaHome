@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif
+}
+.image{
+    width: auto;
+    height: 5vh;
+}
+.image img{
+    width: 70px;
+    margin-top: 3%;
+    margin-left: 10%;
+}
+.image h1{
+    margin-top: -6%;
+    margin-left: 17%; 
+}
+.image p{
+    margin-left: 17%;
+    margin-top: 0%;
+}
+.nav{
+    width: 100%;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul li{
+    margin-top: 1%;
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+}
+.logos1{
+    margin-left: 60%;
+    margin-top: -5%;
+}
+.logos2{
+    margin-left: 70%;
+    margin-top: -5%;
+}
+.logos3{
+    margin-left: 80%;
+    margin-top: -4.9%;
+}
+.content{
+    text-align:center;
+}
+.content a{
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 24px;
+    border: 2px solid #fff;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 10%;
+}
+#hero{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative; 
+}
+.slideshow{
+    margin-top: 5%;
+}
+.container1,.container2,.container3,.container4{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    margin-top: 10%;
+}
+.container1 img,.container2 img,.container3 img,.container4 img{
+    width: 120%;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    animation: zoom-out 3s linear infinite;
+}
+.textbox{
+    width: 400px;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    color: #fff;
+    animation: textup 12s linear infinite;
+    transform: translateY(100px);
+}
+.textbox h1{
+    margin-bottom: 40px;
+}
+.textbox p{
+    font-size: 17px;
+    line-height: 30px;
+    margin-top: 60px;
+}
+.textbox span{
+    background: #fff;
+    height: 1px;
+    width: 100px;
+    position: absolute;
+    left: 0;
+    top: 40px;
+}
+.container1{
+    animation: slide1 12s linear infinite;
+}
+.container2{
+    animation: slide2 12s linear infinite;
+}
+.container3{
+    animation: slide3 12s linear infinite;
+}
+.container4{
+    animation: slide4 12s linear infinite;
+}
+@keyframes slide1{
+    0%{
+        visibility: visible;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+@keyframes slide2{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: visible;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+@keyframes slide3{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: visible;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+@keyframes slide4{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+@keyframes textup{
+    10%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.textbox1{
+    animation-delay: 0s;
+}
+.textbox2{
+    animation-delay: 3s;
+}
+.textbox3{
+    animation-delay: 6s;
+}
+.textbox4{
+    animation-delay: 9s;
+}
+.remo{
+    margin-top: 65%;
+    margin-left: 20%;
+}
+.gallery{
+    margin: 50px;
+    border: 100px #ccc;
+    float: left;
+    width: 300px;
+}
+.gallery img{
+    width: 100px;
+    height: auto;
+    margin-left: 75px;
+}
+.desc{
+    padding: 15px;
+    text-align: center;
+}
+.remo1{
+    margin-top: 5%;
+    margin-left: 3%;
+}
+.gallery1{
+    width: 100px;
+    margin-left:10%;
+}
+.gallery2{
+    width: 100px;
+    margin-left:38%;
+    margin-top: -14.5%;
+}
+.gallery3{
+    width: 100px;
+    margin-left: 65%;
+    margin-top: -15%;
+}
+.sruthi{
+    margin-top: 102%;
+    background-color: green;
+}
+.sruthi h1{
+    margin-left: 40%;
+    color: orange;
+}
+.sruthi p{
+    margin-left: 20%;
+    margin-right: 20%;
+    color: whitesmoke;
+}
+footer{
+    margin-top: 10%;
+    padding: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #594848;
+    color: whitesmoke;
+    font-family: Arial;
+    letter-spacing: 1px;
+}
+.footer h3{
+    top: 100px;
+}
+.content1{
+    text-align:center;
+}
+.content1 a{
+    text-decoration: none;
+    display: inline-block;
+    color: green;
+    font-size: 24px;
+    border: 2px solid black;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 10%;
+}
+.remo12{
+    margin-top: 3%;
+    margin-left: 3%;
+}
+.gallery12{
+    width: 70px;
+    margin-left:40%;
+}
+.gallery22{
+    width: 70px;
+    margin-left:45%;
+    margin-top: -2.75%;
+}
+.gallery32{
+    width: 70px;
+    margin-left: 50%;
+    margin-top: -2.75%;
+}
